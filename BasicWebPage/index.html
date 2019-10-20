@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body>
+    <p>Enter first number:</p>
+    <input type="number" id="first">
+    <p>Enter second number:</p>
+    <input type="number" id="second">
+    <button onclick="sumanth()">Add</button>
+    <p>Adding of two numbers is:</p>
+    <input type="number" id="answer">
+    <p></p>
+</body>
+<script>
+    function sumanth() {
+        var a, b, x;
+        a = Number(document.getElementById("first").value);
+        b = Number(document.getElementById("second").value);
+        x = a / b;
+        document.getElementById("answer").value = x
+    }
+</script>
+</html>
