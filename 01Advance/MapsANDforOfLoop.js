@@ -13,12 +13,18 @@ var elon = {
   age: 20,
   isAlive: !true
 };
+var musk = {
+  name: "I am musk melon",
+  age: 18,
+  isAlive: false
+};
 //creating new objects Map
 let users = new Map();
 // console.log(typeof users); //Here users is a object type
 users.set("john", wick);
 users.set("kiran", keanu);
 users.set("sumanth", elon); //sumanth=key || elon =value
+users.set("melo",musk);
 
 console.log(users);
 users.forEach((value, key) => console.log(key + " = " + value.name));
@@ -36,7 +42,7 @@ users.forEach((value, key) => console.log(key + " = " + value.name));
 // console.log(users.keys());
 // console.log(users.values());
 for (const key of users.keys()) {
-    // console.log(key);
+     console.log(key);
   //Above log statement will give the following output as keys
   //   john;
   //   kiran;
@@ -71,3 +77,22 @@ let nums = new Map(arrayofArr); //directly passing arrayofArray into MAP() it co
 for (const [key, value] of nums.entries()) {
   // console.log(key + "=" + value);
 }
+
+
+
+
+
+
+//exercise on this keyword in javascript
+let createObject = {
+  day: "Sunday",
+  prs: 0,
+  mergedprs: 0,
+
+  addMeeting:function(meetsAdded){
+      createObject.prs=this.prs+meetsAdded
+      return `${this.prs}`
+  }
+};
+console.log(createObject.addMeeting(5))
+
