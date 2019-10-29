@@ -10,6 +10,8 @@
 const sayHello = name => `hey ${name}!`;
 
 // console.log(sayHello("john wick"));
+const returnName = names => `hi ${names}`;
+console.log(returnName("flutter"))
 
 const myTodos = [
   {
