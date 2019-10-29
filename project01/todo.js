@@ -90,5 +90,19 @@ function removeItem() {
 //   }
 }
 
-document.documentElement.innerHTML =
-  "<pre>" + document.documentElement.innerHTML.replace(/</g, "&lt;") + "</pre>";
+//document.documentElement.innerHTML =
+ // "<pre>" + document.documentElement.innerHTML.replace(/</g, "&lt;") + "</pre>";
+
+
+
+
+//currency converter
+function convert(){
+var rupee= parseInt(document.getElementById("rupee").value);
+var inDollar= (rupee/71)
+const myPelements=document.querySelector('#dollar')
+// console.log('look below');
+// console.log(myPelements.textContent);
+//changing content of first P tag element using script
+myPelements.textContent=inDollar
+}
